@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="{% url "laptop" %}">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Phone</a>
@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#">Laptop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tablate</a>
+                <a class="nav-link" href="{% url "tab" %}">Tablate</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,12 +59,53 @@
 
     {% comment %} navbar end {% endcomment %}
 
+    {% comment %} carousel start {% endcomment %}
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "image/laptop/macbook23.webp" %}" class="d-block w-100" alt="img not found">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Macbook pro 2023</h5>
+        <p>31st October 2023</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "image/phone/phone1.jpg" %}" class="d-block w-100" alt="img not found">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Macbook pro 2022</h5>
+        <p>06th June 2022.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "image/tab/tab1.jpg" %}" class="d-block w-100" alt="img not found">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Macbook air 2023</h5>
+        <p>13th June 2023</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% comment %} carousel end {% endcomment %}
+
 
     {% block content %}
     
     {% endblock content %}
     
-
+    <br>
     {% comment %} footer start  {% endcomment %}
     <footer class="bg-dark text-light text-center py-4">
         <div class="container">
