@@ -19,12 +19,12 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    path('laptop/', include("laptop.urls")),
+    # path('laptop/', include("laptop.urls")),
     path('phone/', include("phone.urls")),
     path('mac/', include('mac.urls')),
-    path('tab/', include('tab.urls')),
+    path('iPad/', include('iPad.urls')),
     path('air/', include('air_pods.urls')),
     path('tv/', include('tv_home.urls')),
-    path('vision/', include('vision/urls')),
+    path('vision/', include('vision.urls')),
     path('watch/', include('watch.urls')),
 ]
