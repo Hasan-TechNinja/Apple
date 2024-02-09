@@ -39,6 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'air_pods',
+    'iPad',
+    'mac',
+    'phone',
+    'tv_home',
+    'vision',
+    'watch',
 ]
 
 MIDDLEWARE = [

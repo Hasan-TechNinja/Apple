@@ -17,3 +17,7 @@
 .centre-item{
     justify-content: center;
 }
+.carousel img{
+    height: 300px;
+    width: 600px;
+}

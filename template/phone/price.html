@@ -1,0 +1,35 @@
+{% extends "common_code/base.html" %}
+{% load static %}
+{% block title %}iPhone Price{% endblock title %}
+{% block content %}
+
+{% if prc %}
+<table border='1px'>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    {% for p in prc %}
+    <tr>
+        <td>{{p.id}}</td>
+        <td>{{p.Name}}</td>
+        <td>{{p.Price}}</td>
+    {% endfor %}
+    </tr>
+</table>
+{% else  %}
+    <h3>Table not found</h3>
+{% endif %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock content %}
