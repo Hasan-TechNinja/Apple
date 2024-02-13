@@ -7,4 +7,5 @@ def home(request):
 
 def Students(request):
     fm = Student()
+    fm.order_fields(field_order=['Id', 'First_name', 'Last_name', 'Email', 'Date_of_birth'])
     return render(request, 'watch/Student.html', {"form": fm})
