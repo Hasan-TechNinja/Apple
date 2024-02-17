@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method='POST'> {% csrf_token %}
         <table>
             {{form}}
         </table>
-        <input type="button" value="Submit">
+        <input type="Submit" value="Submit">
     </form>
 </body>
 </html>
