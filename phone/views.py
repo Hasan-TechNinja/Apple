@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from phone.models import Phone, Student
+from . forms import Teacher_registrations
 
 # Create your views here.
 def home(request):
@@ -12,3 +13,7 @@ def price(request):
 def student(request):
     st = Student.objects.all()
     return render(request, 'phone/student.html', {'std':st})
+
+def teacher_reg(request):
+    fm = Teacher_registrations()
+    return render(request, "Teacher/registration.html", {'form': fm})
