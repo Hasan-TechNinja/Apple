@@ -1,0 +1,31 @@
+{% extends "common_code/base.html" %}
+{% load static %}
+{% block title %}Student{% endblock title %}
+
+{% block content %}
+
+{% if std %}
+<table border='1px'>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Class</th>
+        <th>Result</th>
+    </tr>
+    {% for s in std %}
+    <tr>
+        <td>{{s.sid}}</td>
+        <td>{{s.fname}}</td>
+        <td>{{s.lname}}</td>
+        <td>{{s.clas}}</td>
+        <td>{{s.result}}</td>
+    {% endfor %}
+    </tr>
+</table>
+{% else  %}
+    <h3>Table not found</h3>
+{% endif %}
+
+
+{% endblock content %}
