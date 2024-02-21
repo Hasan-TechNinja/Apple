@@ -1,0 +1,14 @@
+{% extends "common_code/base.html" %}
+{% load static %}
+{% block title %}Registration Form{% endblock title %}
+{% block content %}
+
+<form action="" method='POST' novalidate>
+    {% comment %} <table> {% endcomment %}
+        {% csrf_token %}
+        {{form.as_p}}
+    {% comment %} </table> {% endcomment %}
+    <input type="submit" value='submit'>
+</form>
+
+{% endblock content %}

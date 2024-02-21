@@ -1,8 +1,8 @@
 from django import forms
 
-class Teacher_registrations(forms.Form):
+class Student_registrations(forms.Form):
     First_Name = forms.CharField()
     Last_Name = forms.CharField()
     Email = forms.EmailField()
-    Pas = forms.PasswordInput()
-    v_Pas = forms.PasswordInput()
+    Password = forms.CharField(widget=forms.PasswordInput)
+    Re_Password = forms.CharField(widget=forms.PasswordInput)
