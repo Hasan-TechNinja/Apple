@@ -1,0 +1,24 @@
+*{
+    margin-top: 0;
+    margin-left: 0;
+    padding: 5px;
+    align-items: center;
+    background-color:blanchedalmond;
+}
+input{
+    width: 200px;
+    background-color: aliceblue;
+    position: relative;
+    margin-left: 100px;
+    height: 30;
+}
+
+.main{
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color:rgb(228, 140, 26)
+}
+label{
+    background-color: rgb(166, 123, 207);
+    width: 30px;
+}

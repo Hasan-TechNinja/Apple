@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/mac.css" %}">
+
+<div class='main'>
+    <table border='1px'>
+        <form action="" method = 'POST' novalidate>
+            {% csrf_token %}
+            <table> {{form}} </table>
+            <input type="submit" name="" id="" value='submit'>
+        </form>
+    </table>
+</div>
