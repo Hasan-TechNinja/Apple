@@ -3,7 +3,7 @@ from django import forms
 
 class StudentRegistration(forms.Form):
     # first_name = forms.ChoiceField()
-    f_name = forms.CharField()
+    first_name = forms.CharField()
     last_name = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
     re_password = forms.CharField(widget=forms.PasswordInput)

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Creation</title>
+</head>
+<body>
+    <h2>User creation form</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% for fm in form %}
+        {{fm.label_tag}}  {{fm}} {{fm.errors | striptags}} <br><br>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</body>                                     
+</html>

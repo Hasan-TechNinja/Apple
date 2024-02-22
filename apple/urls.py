@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('userC/', include('UserC.urls')),
     path('m', include('home.urls')),
     path('air/', include('air_pods.urls')),
     path('iPad/', include('iPad.urls')),
