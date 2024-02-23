@@ -1,7 +1,15 @@
 from django.shortcuts import render
-from django.contrib.auth.forms import UserCreationForm
+# from django.contrib.auth.forms import UserCreationForm
+from . forms import usercf
+from django.http import HttpResponse
 
-# Create your views here.
 def userCreationForm(request):
-    userC = UserCreationForm()
-    return render(request, 'user/userCreation.html', {'form': userC})
+    if request.method == "POST":
+        userCF = usercf(request.POST)
+        if userCF.is_valid():
+            userCF.save()
+            return HttpResponse("This form successfully submitted")
+            # return render(request, '****************')
+    else:
+        userCF = usercf()
+    return render(request, 'user/userCreation.html', {'form': userCF})
