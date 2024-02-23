@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/login.css" %}">
+    <!-- Move the {% load static %} tag here for better organization -->
+</head>
+<body>
+    <h2>Login</h2>
+    <div  class = 'logins'>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            <div>
+                {{ field.label_tag }}
+                {{ field }}
+                {{ field.error | striptags }}
+                <br> <br>
+            </div>
+            {% endfor %}
+            <a href="{% url 'userCF' %}">Sing up</a>
+            <input type="submit" value='Login' class='login'>
+        </form>
+        {% comment %} <input type="submit" value="Sing up" href='{% url "userCF" %}' class='singup'> {% endcomment %}
+    </div>
+</body>
+</html>

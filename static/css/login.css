@@ -7,7 +7,7 @@ h2{
     color: aliceblue;
 }
     
-.usercf{
+.logins{
     background-color: rgb(180, 175, 167);
     margin-top: 35px;
     margin-left: 30%;
@@ -22,8 +22,10 @@ h2{
 
 .login{
     margin-right: 200px;
+    margin-left: 100px;
 }
 .singup{
+    margin-right: 200px;
     margin-right: 100px;
 }   
 input{

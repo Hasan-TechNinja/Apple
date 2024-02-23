@@ -4,6 +4,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('usercf/', views.userCreationForm, name = 'userCF')
+    path('usercf/', views.userCreationForm, name = 'userCF'),
+    path('', views.login_form, name = 'login'),
+    path('success/', views.s_login, name = 'success')
 
 ]
