@@ -11,8 +11,8 @@ def userCreationForm(request):
         userCF = usercf(request.POST)
         if userCF.is_valid():
             userCF.save()
-            # return HttpResponseRedirect('//')
-            return render(request, 'user/login.html')
+            return HttpResponseRedirect('/')
+            # return render(request, 'user/login.html')
     else:
         userCF = usercf()
     return render(request, 'user/userCreation.html', {'form': userCF})

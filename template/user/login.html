@@ -21,8 +21,9 @@
                 <br> <br>
             </div>
             {% endfor %}
-            <a href="{% url 'userCF' %}">Sing up</a>
-            <input type="submit" value='Login' class='login'>
+            <input type="submit" value='Login' class='login'> <br> <br>
+            <hr>
+            <a href="{% url 'userCF' %}">Create new account</a>
         </form>
         {% comment %} <input type="submit" value="Sing up" href='{% url "userCF" %}' class='singup'> {% endcomment %}
     </div>

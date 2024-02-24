@@ -19,15 +19,18 @@ h2{
     text-align: center;
     
 }
-
+/* 
 .login{
     margin-right: 200px;
-}
+} */
 .singup{
     margin-right: 100px;
-    background-color: rgb(226, 223, 223);
-    padding-left: 13px;
-    padding-right: 13px;
+    font-size: large;
+    background-color: rgb(1, 143, 37);
+    color: white;
+    margin-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
 }   

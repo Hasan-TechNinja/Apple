@@ -22,7 +22,8 @@
             </div>
             <!-- Wrap each form field and its label in a div for better structure -->
         {% endfor %}
-        <a href="{% url "login" %}">Login</a>  <input type="submit" value="Sing up" class='singup'>
+        <input type="submit" value="Sing up" class='singup'>
+        {% comment %} <a href="{% url "login" %}">Login</a> {% endcomment %}
     </form>
 </body>
 </html>
