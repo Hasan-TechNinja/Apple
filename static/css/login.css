@@ -23,6 +23,11 @@ h2{
 .login{
     margin-right: 200px;
     margin-left: 100px;
+    background-color: rgb(226, 223, 223);
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .singup{
     margin-right: 200px;

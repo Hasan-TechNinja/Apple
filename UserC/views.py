@@ -11,6 +11,7 @@ def userCreationForm(request):
         userCF = usercf(request.POST)
         if userCF.is_valid():
             userCF.save()
+            # return HttpResponseRedirect('//')
             return render(request, 'user/login.html')
     else:
         userCF = usercf()
@@ -20,12 +21,12 @@ def login_form(request):
     if request.method == 'POST':
         frm = AuthenticationForm(request=request, data = request.POST)
         if frm.is_valid():
-            uname = frm.cleaned_data('username')
-            upas = frm.cleaned_data('password')
+            uname = frm.cleaned_data['username']
+            upas = frm.cleaned_data['password']
             user = authenticate(username = uname, password = upas)
             if user is not None:
                 login(request, user)
-                return HttpResponseRedirect('UserC/success')
+                return HttpResponseRedirect('/success/')
     else:
         frm = AuthenticationForm
     return render(request, 'user/login.html', {'form': frm})

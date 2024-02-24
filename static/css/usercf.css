@@ -25,6 +25,11 @@ h2{
 }
 .singup{
     margin-right: 100px;
+    background-color: rgb(226, 223, 223);
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }   
 input{
     border-radius: 5px;
