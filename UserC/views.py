@@ -29,7 +29,9 @@ def login_form(request):
                 return HttpResponseRedirect('/success/')
     else:
         frm = AuthenticationForm
+        # return HttpResponse('Password dose not matched')
     return render(request, 'user/login.html', {'form': frm})
 
 def s_login(request):
-    return render(request, 'user/lgsuccess.html')
+    # return HttpResponse('password dose not matched')
+    return render(request, 'home/home.html')
