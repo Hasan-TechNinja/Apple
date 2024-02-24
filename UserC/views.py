@@ -35,3 +35,7 @@ def login_form(request):
 def s_login(request):
     # return HttpResponse('password dose not matched')
     return render(request, 'home/home.html')
+
+def logout_form(request):
+    logout(request)
+    return HttpResponseRedirect('/')

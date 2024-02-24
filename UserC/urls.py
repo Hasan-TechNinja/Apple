@@ -6,6 +6,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('usercf/', views.userCreationForm, name = 'userCF'),
     path('', views.login_form, name = 'login'),
-    path('success/', views.s_login, name = 'success')
+    path('success/', views.s_login, name = 'success'),
+    path('logout/', views.logout_form, name = 'logout'),
 
 ]
